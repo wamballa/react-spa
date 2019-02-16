@@ -14,10 +14,9 @@ export class AddGame extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        this.props.addGame(this.state);
     }
     render() {
-
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
