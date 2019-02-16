@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Videogame from './components/Videogame';
 import './App.css';
-
 // CONTAINER COMPONENT
 // holds state / hooks state from internet and feeds to UI COMPONENT (like navbar)
-
 class App extends Component {
     state = {
         games: [{
