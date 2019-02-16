@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Videogame from './components/Videogame';
 import './App.css';
 
+// CONTAINER COMPONENT
+// holds state / hooks state from internet and feeds to UI COMPONENT (like navbar)
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    state = {
+        games: [{
+            title: "star wars",
+            genre: "Arcade",
+            platform: "PC",
+            id: 1
+        },
+        {
+            title: "CnC",
+            genre: "RTS",
+            platform: "PC",
+            id: 2
+        }
+        ]
+    }
+    render() {
+        return (
+            <div className="app-container">
+                <h1>Video Game Catalogue</h1>
+                <Videogame games={this.state.games} />
+            </div>
+        )
+    }
+
 }
 
 export default App;
