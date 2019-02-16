@@ -6,16 +6,17 @@ const Games = (props) => {
     // const {title, genre, platform } = this.props;   
     const { games } = props;
     const gameList = games.map(game => {
-        console.log(game);
-        return (
+        return game.year > 1975 ? (
             <div className="game" key={game.id}>
                 <div>Title: {game.title}</div>
                 <div>Genre: {game.genre}</div>
                 <div>Platform: {game.platform}</div>
+                <div>Release year: {game.year}</div>
             </div>
-        )
+        ) : null;
     })
     return (
+        // This is called the template
         <div className="game-list">
             {gameList}
         </div>
