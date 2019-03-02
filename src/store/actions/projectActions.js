@@ -1,7 +1,7 @@
 // With Thunk you can return a function
 // export default function createProject(project) {
 export const createProject = (project) => {
-  return (dispatch, getState, { getFirebase, getFirestore }) => {
+  return (dispatch, getState, { getFirestore }) => {
     // make asynch call to database
     // pause dispatch until following is complete
     const firestore = getFirestore();
@@ -16,7 +16,7 @@ export const createProject = (project) => {
       createAt: new Date()
     }).then(() => {
       // once complete fire dispatcher to projectReducer
-      dispatch({ type: 'CREATE_PROJECT', project });
+      dispatch({ type: 'CREATE_PROJECT_SUCCESS', project });
     }).catch((err) => {
       // once complete fire dispatcher to projectReducer
       dispatch({ type: 'CREATE_PROJECT_ERROR', err });
