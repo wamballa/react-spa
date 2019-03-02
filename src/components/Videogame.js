@@ -8,12 +8,12 @@ const Games = (props) => {
     const { deleteGame } = props;
     const gameList = games.map(game => {
         return game.year > 1960 ? (
-            <div className="game" key={game.id}>
+            <div className="game card blue-grey darken1 white-text" key={game.id}>
                 <div>Title: {game.title}</div>
                 <div>Genre: {game.genre}</div>
                 <div>Platform: {game.platform}</div>
                 <div>Release year: {game.year}</div>
-                <button onClick={
+                <button className="waves-effect waves-light btn" onClick={
                     () => {
                         deleteGame(game.id)
                     }
