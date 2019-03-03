@@ -7,7 +7,7 @@ export default function ProjectSummary({project}) {
           <span className="card-title">
             {project.title}
           </span>
-          <p>Posted by Steve...</p>
+          <p>{project.authorFirstName} {project.authorLastName}</p>
           <p className="grey-text">22 Feb 2018, 3am</p>
         </div>
       </div>
