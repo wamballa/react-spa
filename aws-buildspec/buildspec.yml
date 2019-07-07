@@ -7,7 +7,6 @@ phases:
   pre_build:
     commands:
       - echo nothing to do in install phase
-      - cd react-example
   build:
     commands:
       - echo Build started on 'date'
@@ -16,4 +15,4 @@ phases:
       - echo Build completed on 'date'
 artifacts:
   files:
-    - react-example/target/*
+    - react/*
