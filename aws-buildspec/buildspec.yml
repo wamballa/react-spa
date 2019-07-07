@@ -4,5 +4,15 @@ phases:
   install:
     commands:
       -echo nothing to do in install phase
-    pre_build:
+  pre_build:
+    commands:
       -cd react-example
+  build:
+    commands:
+      -echo nothing to do in build phase
+  post_build:
+    commands:
+      -echo nothing to do in build phase
+artifacts:
+  files:
+    -echo nothing to do in build phase
