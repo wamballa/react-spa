@@ -9,7 +9,8 @@ phases:
       - echo nothing to do in install phase
   build:
     commands:
-      - echo nothing to do in install phase
+      - echo Build started on `date`
+      - npm install
   post_build:
     commands:
-      - echo nothing to do in install phase
+      - echo Build completed on `date`
