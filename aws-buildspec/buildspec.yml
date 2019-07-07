@@ -1,0 +1,8 @@
+version 0.2
+
+phases:
+  install:
+    commands:
+      -echo nothing to do in install phase
+    pre_build:
+      -cd react-example
