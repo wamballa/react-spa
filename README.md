@@ -1,3 +1,27 @@
+TARGET WORKFLOW
+===============
+
+LOCAL REACT APP --do i build the app here or can AWS?
+
+GITHUB 
+
+AWS PIPELINE SOURCE - S3? DONE
+
+AWS PIPELINE BUILD - JENKINS? Currently locally - not done
+
+AWS PIPELINE TEST? - not done
+
+AWS PIPELINE DEPLOY - ELASTIC BEANSTALK? DONE
+
+HEROKU
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

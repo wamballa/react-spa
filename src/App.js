@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from "./components/layouts/Navbar";
 import Dashboard from './components/dashboard/Dashboard'
 import ProjectDetails from './components/projects/ProjectDetails'
@@ -11,7 +11,7 @@ import CreateProject from './components/projects/CreateProject'
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div className="App">
                     <Navbar />
                     <Switch>
@@ -22,7 +22,7 @@ class App extends Component {
                       <Route path='/create' component={CreateProject}/>
                     </Switch>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
 
         );
     }

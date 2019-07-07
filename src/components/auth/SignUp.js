@@ -9,7 +9,9 @@ class SignUp extends Component {
     password: '',
     firstName: '',
     lastName: '',
+    actionCodeSettings: {}
   }
+
   handleChange = (e) => {
     this.setState({
       [e.target.id]: e.target.value
