@@ -15,5 +15,5 @@ phases:
     commands:
       - echo Build completed on 'date'
 artifacts:
-  base-directory:
-    - react-example/target
+  files:
+    - react-example/target/*
