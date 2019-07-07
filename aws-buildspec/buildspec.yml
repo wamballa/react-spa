@@ -7,10 +7,10 @@ phases:
   pre_build:
     commands:
       - echo nothing to do in install phase
+      - cd react-example
   build:
     commands:
       - echo Build started on 'date'
-      - npm install
   post_build:
     commands:
       - echo Build completed on 'date'
