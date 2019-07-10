@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "/react-example/",
   "dependencies": {
     "firebase": "^5.8.4",
     "gh-pages": "^2.0.1",
