@@ -12,6 +12,7 @@ phases:
       - echo Build started on 'date'
       - npm install
       - npm run build
+      - rm -rt node_modules
   post_build:
     commands:
       - echo Build completed on 'date'
